@@ -122,14 +122,36 @@ a:hover{
 }
 .hi-there{
     grid-area: hithere;
+    justify-self: start;
+    align-self: end;
+    margin-left: 20px;
 }
 .header-bottom .user-name{
     grid-area: bottomusername;
+    justify-self: start;
+    align-self: start;
+    text-align: left;
+    margin-left: 20px;
 }
 .content-btns{
     grid-area: contentbtns;
+    justify-self: end;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
-
+.content-btns button{
+    background-color: #0ea5e9;
+    color: white;
+    font-size: 16px;
+    width: 75px;
+    padding: 5px;
+    border: 1px solid #0ea5e9;
+    border-radius: 20px;
+}
+.content-btns > button:hover{
+    background-color: #1891ca;
+}
 /* End header content styling */
 
 
