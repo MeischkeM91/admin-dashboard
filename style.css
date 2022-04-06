@@ -1,10 +1,12 @@
 *{
     margin: 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 body, html{
     background-color: #e2e8f0;
     height: 100%;
+    min-width: 750px;
 }
 .container{
     display: grid;
@@ -52,9 +54,55 @@ body, html{
     background-color: white;
     border-bottom: 1px solid lightgray;
     box-shadow: 0px 3px 5px lightgray;
-    padding: 15px 10px;
+    padding: 15px 20px;
 }
-
+.header a:link, .header a:visited{
+    color: #18181b;
+    text-decoration: none;
+}
+.header-top{
+    display: grid;
+    grid-template-columns: auto 4fr 3fr;
+    grid-template-rows: min(40px);
+    grid-template-areas: "searchicon searchbar userbar";
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 10px;
+    margin-bottom: 30px;
+}
+.search-icon{
+    grid-area: searchicon;
+}
+#search-bar{
+    place-self: center stretch;
+    grid-area: searchbar;
+    height: 27px;
+    background-color: azure;
+    border: 3px solid #0ea5e9;
+    border-radius: 20px;
+    margin-right: 10%;
+    padding-left: 10px;
+}
+.user-bar{
+    grid-area: userbar;
+    justify-self: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+.notif-icon{
+    grid-area: notificon;
+}
+.top-user-icon{
+    grid-area: topusericon;
+    width: 35px;
+}
+.user-name{
+    grid-area: username;
+    font-size: 18px;
+    text-align: center;
+}
 /* End header content styling */
 
 
