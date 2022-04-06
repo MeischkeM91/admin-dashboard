@@ -193,6 +193,7 @@ a:hover{
     background-color: white;
     border-left: 8px solid #0ea5e9;
     border-radius: 8px;
+    box-shadow: 2px 2px 2px gray;
     padding: 10px;
 }
 .project-header{
@@ -227,8 +228,8 @@ a:hover{
 /* announcements module */ 
 .announcements{
     background-color: white;
-    border: 1px solid lightgray;
     border-radius: 15px;
+    box-shadow: 2px 2px 2px gray;
     padding: 20px;
     margin-bottom: 30px;
 }
@@ -243,8 +244,8 @@ a:hover{
 /* Trending module*/
 .trending{
     background-color: white;
-    border: 1px solid lightgray;
     border-radius: 15px;
+    box-shadow: 2px 2px 2px gray;
     padding: 20px;
 }
 .avatar{grid-area: avatar;}
