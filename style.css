@@ -54,11 +54,12 @@ a:hover{
 .header{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-around;
+    gap: 10px;
     background-color: white;
     border-bottom: 1px solid lightgray;
     box-shadow: 0px 3px 5px lightgray;
-    padding: 15px 20px;
+    padding: 15px 15px;
 }
 .header a:link, .header a:visited{
     color: #18181b;
@@ -72,7 +73,6 @@ a:hover{
     justify-items: center;
     align-items: center;
     grid-column-gap: 10px;
-    margin-bottom: 30px;
 }
 .search-icon{
     grid-area: searchicon;
@@ -119,26 +119,28 @@ a:hover{
 }
 .bottom-user-icon{
     grid-area: bottomusericon;
+    height: 100%;
+    width: auto;
 }
 .hi-there{
     grid-area: hithere;
     justify-self: start;
     align-self: end;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .header-bottom .user-name{
     grid-area: bottomusername;
     justify-self: start;
     align-self: start;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .content-btns{
     grid-area: contentbtns;
     justify-self: end;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
 }
 .content-btns button{
     background-color: #0ea5e9;
