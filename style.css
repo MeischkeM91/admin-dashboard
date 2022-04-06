@@ -11,6 +11,7 @@ body, html{
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 150px 1fr;
 }
+/* Sidebar content styling */
 .sidebar{
     background-color: #0ea5e9;
     color: white;
@@ -19,11 +20,6 @@ body, html{
     font-weight: bolder;
     text-align: center;
     padding: 10px 5px 0 0;
-}
-.header{
-    background-color: white;
-    border-bottom: 1px solid lightgray;
-    box-shadow: 0px 3px 5px lightgray;
 }
 .account-links{
     margin-top: 20px;
@@ -46,3 +42,18 @@ body, html{
 .sidebar a:hover{
     text-decoration:underline;
 }
+/* End Sidebar content styling */
+
+/* Header content styling */
+.header{
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0px 3px 5px lightgray;
+}
+
+/* End header content styling */
+
+
+
+/* Main-Content styling */
+/* End Main-Content styling */
