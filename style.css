@@ -16,7 +16,7 @@ a:hover{
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 150px 1fr;
 }
-/* Sidebar content styling */
+/****** Sidebar content styling ******/
 .sidebar{
     background-color: #0ea5e9;
     color: white;
@@ -48,9 +48,9 @@ a:hover{
     text-decoration:underline;
     transform: scale(1.05);
 }
-/* End Sidebar content styling */
+/****** End Sidebar content styling ******/
 
-/* Header content styling */
+/****** Header content styling ******/
 .header{
     display: flex;
     flex-direction: column;
@@ -65,6 +65,7 @@ a:hover{
     color: #18181b;
     text-decoration: none;
 }
+/* top portion of header */
 .header-top{
     display: grid;
     grid-template-columns: auto 4fr 3fr;
@@ -107,6 +108,8 @@ a:hover{
     font-size: 18px;
     text-align: center;
 }
+/* end top portion of header */
+/* bottom portion of header */
 .header-bottom{
     display: grid;
     grid-template-columns: 1fr 4fr 3fr;
@@ -154,9 +157,10 @@ a:hover{
 .content-btns > button:hover{
     background-color: #1891ca;
 }
-/* End header content styling */
+/* end bottom portion of header */
+/****** End header content styling ******/
 
 
 
-/* Main-Content styling */
-/* End Main-Content styling */
+/****** Main-Content styling ******/
+/****** End Main-Content styling ******/
