@@ -159,8 +159,51 @@ a:hover{
 }
 /* end bottom portion of header */
 /****** End header content styling ******/
-
-
-
 /****** Main-Content styling ******/
+.main-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+/* projects container */
+.your-projects{grid-area: yourprojects; font-weight: bold;}
+.project-one{ grid-area: projectone;}
+.project-two{ grid-area: projecttwo;}
+.project-three{ grid-area: projectthree;}
+.project-four{ grid-area: projectfour;}
+.project-five{ grid-area: projectfive;}
+.project-six{ grid-area: projectsix;}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto repeat(3, 1fr);
+    grid-template-areas: 
+    "yourprojects yourprojects"
+    "projectone projecttwo"
+    "projectthree projectfour"
+    "projectfive projectsix";
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin: 15px;
+}
+.project{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    background-color: white;
+    border-left: 8px solid #0ea5e9;
+    border-radius: 8px;
+    padding: 10px;
+}
+.project-header{
+    font-weight: bold;
+    align-self: end;
+}
+.project-description{
+    font-size: 14px;
+}
+.project-buttons{
+    justify-self: end;
+    align-self: end;
+}
+/* end projects container */
 /****** End Main-Content styling ******/
