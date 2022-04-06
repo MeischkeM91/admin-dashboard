@@ -159,6 +159,7 @@ a:hover{
 }
 /* end bottom portion of header */
 /****** End header content styling ******/
+
 /****** Main-Content styling ******/
 .main-content{
     display: grid;
@@ -206,10 +207,11 @@ a:hover{
     align-self: end;
 }
 /* end projects container */
+
 /* Social container */
 .announce-header { grid-area: announeheader;font-weight: bold;}
 .announcements { grid-area: announcements;}
-.trend-header { grid-area: trendheader;}
+.trend-header { grid-area: trendheader;font-weight: bold;}
 .trending { grid-area: trending;}
 .social-container{
     display: grid;
@@ -222,11 +224,13 @@ a:hover{
     grid-row-gap: 15px;
     margin: 15px;
 }
+/* announcements module */ 
 .announcements{
     background-color: white;
     border: 1px solid lightgray;
     border-radius: 15px;
     padding: 20px;
+    margin-bottom: 30px;
 }
 .announcements div{
     font-size: 16px;
@@ -235,6 +239,33 @@ a:hover{
 .announcement1, .announcement2 {
     border-bottom: 1px solid lightgray;
 }
-
+/* End announcements module */ 
+/* Trending module*/
+.trending{
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 20px;
+}
+.avatar{grid-area: avatar;}
+.handle{grid-area: handle;}
+.role{grid-area: role;}
+.socmediahandle{
+    display: grid;
+    grid-template-rows: repeat(2, 40px);
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "avatar handle"
+    "avatar role";
+}
+.avatar{
+    height:80%; 
+    width: auto;
+    margin: auto 10px auto 0px;
+}
+.handle{
+    align-self: end;
+}
+/* EndTrending module*/
 /* End Social container*/
 /****** End Main-Content styling ******/
