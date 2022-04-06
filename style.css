@@ -206,4 +206,35 @@ a:hover{
     align-self: end;
 }
 /* end projects container */
+/* Social container */
+.announce-header { grid-area: announeheader;font-weight: bold;}
+.announcements { grid-area: announcements;}
+.trend-header { grid-area: trendheader;}
+.trending { grid-area: trending;}
+.social-container{
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+    "announeheader"
+    "announcements"
+    "trendheader"
+    "trending";
+    grid-row-gap: 15px;
+    margin: 15px;
+}
+.announcements{
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 20px;
+}
+.announcements div{
+    font-size: 16px;
+    padding: 10px 0px;
+}
+.announcement1, .announcement2 {
+    border-bottom: 1px solid lightgray;
+}
+
+/* End Social container*/
 /****** End Main-Content styling ******/
