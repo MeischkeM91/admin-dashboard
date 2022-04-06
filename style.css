@@ -107,6 +107,29 @@ a:hover{
     font-size: 18px;
     text-align: center;
 }
+.header-bottom{
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr;
+    grid-template-rows: repeat(2, min(40px));
+    grid-template-areas: 
+    "bottomusericon hithere contentbtns"
+    "bottomusericon bottomusername contentbtns";
+    justify-items: center;
+    align-items: center;
+}
+.bottom-user-icon{
+    grid-area: bottomusericon;
+}
+.hi-there{
+    grid-area: hithere;
+}
+.header-bottom .user-name{
+    grid-area: bottomusername;
+}
+.content-btns{
+    grid-area: contentbtns;
+}
+
 /* End header content styling */
 
 
